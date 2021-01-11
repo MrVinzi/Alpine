@@ -15,12 +15,16 @@ ul, li {
     list-style: none;
 }
 
+input {
+    outline: none;
+}
+
 body {
    font-family:'Arial', sans-serif;
 }
 
 .main-wrapper {
-    background: url(p1.jpg) no-repeat;
+    background: url(background.jpg) no-repeat;
     background-size: 100%;
     padding: 20px 30px;
 }
@@ -44,20 +48,15 @@ body {
     font-size: 20px;
     padding: 10px 5px;
     margin-right: 20px;
-
 }
 
 .header-menu-item {
     margin: 0 10px;
     position: relative;
-    /* size: 16px;
-    font-weight: bold;
-    flex-direction:row;
-    border: 1px solid;*/
 }
 
 .header-menu-item:hover .header-menu-sublist{
-     display: block;
+    display: block;
 }
 
 .header-menu-sublist {
@@ -98,4 +97,27 @@ body {
     margin: 20px 0;
     color: #ffffff;
     font-size: 14px;
+}
+
+.email {
+    border-radius: 20px;
+    border: 2px solid #c9c7c7;
+    padding:0 25px;
+    width: 200px;
+    height: 40px;
+    background-color: rgba(0, 0, 0, 0.3);
+    font-size: 18px;
+    color: #c9c7c7;
+}
+
+.request-button {
+    margin-left: 10px;
+    border-radius: 20px;
+    padding:0 10px;
+    width: 130px;
+    height: 40px;
+    background-color: rgba(0, 0, 0, 0.3);
+    border: 2px solid #f70a0a;
+    color: #c9c7c7;
+    font-size: 16px;
 }
