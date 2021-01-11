@@ -19,8 +19,13 @@ input {
     outline: none;
 }
 
+@font-face {
+    font-family: 'Kanit-Regular';
+    src: url('Kanit-Regular.ttf') format('truetype') /*url('Kanit-Regular.woff2') format('woff2')*/;
+}
+
 body {
-   font-family:'Arial', sans-serif;
+   font-family:'Kanit-Regular';
 }
 
 .main-wrapper {
