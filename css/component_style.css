@@ -1,27 +1,7 @@
-* {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    box-sizing: border-box;
-
-}
-a {
-    display: block;
-    color: #000000;
-    text-decoration: none;
-}
-
-ul, li {
-    list-style: none;
-}
-
-input {
-    outline: none;
-}
 
 @font-face {
     font-family: 'Kanit-Regular';
-    src: url('Kanit-Regular.ttf') format('truetype') /*url('Kanit-Regular.woff2') format('woff2')*/;
+    src: url('../fonts/Kanit-Regular.ttf') format('truetype') /*url('Kanit-Regular.woff2') format('woff2')*/;
 }
 
 body {
@@ -29,7 +9,7 @@ body {
 }
 
 .main-wrapper {
-    background: url(background.jpg) no-repeat;
+    background: url(../images/background.jpg) no-repeat;
     background-size: 100%;
     padding: 20px 30px;
 }
