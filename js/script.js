@@ -15,7 +15,6 @@ function clickNext(e) {
     currentPosX = posX;
     setTransition(posX);
    }
-    
 }
 
 
