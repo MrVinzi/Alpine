@@ -1,0 +1,36 @@
+.main-banner {
+    position: relative;
+    height: 426px;
+    overflow: hidden;
+}
+
+.banner-list {
+    display: flex;
+    /*transform: translateX(-640px);
+    transition: transform 0.3s ease-in 3s;*/
+}
+
+.banner-item {
+
+}
+
+.nav {
+    position: absolute;
+    top:50%;
+    z-index: 1;
+}
+
+.nav-right {
+    right:0;
+}
+
+.nav-left {
+    left:0;
+}
+
+.nav-button {
+    border-radius: 50%;
+    background-color: #fff;
+    width: 50px;
+    height: 50px;
+}

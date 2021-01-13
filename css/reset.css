@@ -11,10 +11,12 @@ a {
     text-decoration: none;
 }
 
-ul, li {
+ul,
+li {
     list-style: none;
 }
 
-input {
+input, 
+button {
     outline: none;
 }
