@@ -2,6 +2,10 @@
 <html>
 <head>
     <link rel="stylesheet"  href="css/style.css">
+    
+<link rel="stylesheet" type="text/css" href="node_modules/slick-carousel/slick/slick.css"/>
+// Add the new slick-theme.css if you want the default styling
+<link rel="stylesheet" type="text/css" href="node_modules/slick-carousel/slick/slick-theme.css"/>
     <title>Alpine</title>
 </head>
 <body>
@@ -55,8 +59,53 @@
                     <input class="email" placeholder="enter yr email" alt="enter your email"> <!--empty line-->
                     <button class="request-button">request access</button>
                 </form>
-            </div><!--empty line-->
+               </div>
+            <div class="main-banner">
+                <div class="nav nav-left">
+                    <button class="nav-button" onclick="clickPrev()">Previous</button>
+                </div>
+                <div class="nav nav-right">
+                    <button class="nav-button" onclick="clickNext()">Next</button>
+                </div>
+                <ul id="banner_list" class="banner-list">
+                    <li class="banner-item">
+                        <img src="https://randomwordgenerator.com/img/picture-generator/sport-3365503_640.jpg"> 
+                    </li>
+                    <li class="banner-item">
+                        <img src="https://randomwordgenerator.com/img/picture-generator/53e5dd464853ac14f1dc8460962e33791c3ad6e04e507749742d7cd0964fc2_640.jpg" alt=""> 
+                    </li>
+                    <li class="banner-item"> 
+                        <img src="https://randomwordgenerator.com/img/picture-generator/5ee0d3454a56b10ff3d8992cc12c30771037dbf85257714d742d7ed5964b_640.jpg">
+                    </li>
+                    <li class="banner-item">
+                        <img src="https://randomwordgenerator.com/img/picture-generator/black-coffee-1867753_640.jpg">
+                    </li>
+                </ul>
+            </div>
         </div>
     </div>
+    <div class="slick-slider">
+        <div><img src="https://randomwordgenerator.com/img/picture-generator/53e5dd464853ac14f1dc8460962e33791c3ad6e04e507749742d7cd0964fc2_640.jpg" alt=""> </div>
+        <div><img src="https://randomwordgenerator.com/img/picture-generator/5ee0d3454a56b10ff3d8992cc12c30771037dbf85257714d742d7ed5964b_640.jpg"></div>
+        <div>your content</div>
+    </div>
+
+<script src="https://code.jquery.com/jquery-3.0.0.js"></script>
+<script src="https://code.jquery.com/jquery-migrate-3.3.2.js"></script>
+    <script type="text/javascript" src="node_modules/slick-carousel/slick/slick.min.js"></script>  
+
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('.slick-slider').slick({
+                dots: true,
+                infinite: true,
+                speed: 300,
+                slidesToShow: 1,
+                adaptiveHeight: true
+            });
+        });
+			
+    </script>
+    <script src="js/script.js"></script>
 </body>
 </html>
